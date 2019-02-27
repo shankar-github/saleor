@@ -25,6 +25,17 @@ def get_bool_from_env(name, default_value):
                 '{} is an invalid value for {}'.format(value, name)) from e
     return default_value
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 DEBUG = get_bool_from_env('DEBUG', True)
 

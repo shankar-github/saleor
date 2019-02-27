@@ -447,7 +447,7 @@ WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
         'BUNDLE_DIR_NAME': 'assets/',
-        'STATS_FILE': os.path.join(PROJECT_ROOT, 'webpack-bundle.json'),
+        'STATS_FILE': os.path.join(PROJECT_ROOT, 'webpack.config.js'),
         'POLL_INTERVAL': 0.1,
         'IGNORE': [
             r'.+\.hot-update\.js',

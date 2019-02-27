@@ -25,7 +25,7 @@ def get_bool_from_env(name, default_value):
                 '{} is an invalid value for {}'.format(value, name)) from e
     return default_value
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
